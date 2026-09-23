@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#f8eee8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>03.10.26 ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23cf806a' d='M16 28S3 19.5 3 11.6C3 7.4 6.2 4 10.2 4c2.4 0 4.6 1.3 5.8 3.3C17.2 5.3 19.4 4 21.8 4 25.8 4 29 7.4 29 11.6 29 19.5 16 28 16 28z'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --cream:#fff8f3;
+      --cream2:#f7ebe4;
+      --ink:#442d29;
+      --muted:#8f6f67;
+      --rose:#c97763;
+      --rose2:#a95749;
+      --peach:#eeb294;
+      --gold:#e5ad6b;
+      --shadow:0 28px 80px rgba(72,42,36,.20);
+    }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100%; background:#ead4c7; color:var(--ink); }
+    body {
+      min-height:100svh;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;
+      overflow-x:hidden;
+    }
+    button { font:inherit; -webkit-tap-highlight-color:transparent; }
+
+    .bg {
+      position:fixed; inset:0; overflow:hidden;
+      background:
+        radial-gradient(circle at 50% 17%, rgba(255,240,220,.94), transparent 26%),
+        linear-gradient(180deg,#f6dfd2 0%,#edb89c 44%,#b77466 73%,#5c4240 100%);
+    }
+    .sun {
+      position:absolute; width:340px; height:340px; border-radius:50%;
+      left:50%; top:18%; transform:translate(-50%,-50%);
+      background:radial-gradient(circle, rgba(255,235,189,.72), rgba(255,222,181,.18) 48%, transparent 72%);
+      filter:blur(3px);
+    }
+    .bokeh span {
+      position:absolute; width:8px; height:8px; border-radius:50%;
+      background:#ffd8a3; box-shadow:0 0 16px #ffc98e;
+      animation:pulse 4s ease-in-out infinite;
+    }
+    @keyframes pulse { 50% { opacity:.35; transform:scale(.75) } }
+    .b1{left:9%;top:64%} .b2{left:22%;top:67%;animation-delay:-1s}
+    .b3{left:39%;top:62%;animation-delay:-2s} .b4{left:58%;top:66%;animation-delay:-.6s}
+    .b5{left:72%;top:61%;animation-delay:-1.6s} .b6{left:88%;top:65%;animation-delay:-2.5s}
+
+    .skyline {
+      position:absolute; left:0; right:0; bottom:0; height:42%;
+      opacity:.92;
+    }
+    .skyline svg { width:100%; height:100%; display:block; }
+    .grain {
+      position:absolute; inset:0; opacity:.10; mix-blend-mode:soft-light;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+    }
+
+    .leaf {
+      position:fixed; z-index:3; pointer-events:none; opacity:.70;
+      font-size:24px; top:-10vh; animation:fall linear infinite;
+      filter:drop-shadow(0 5px 8px rgba(60,30,25,.08));
+    }
+    .l1{left:7%;animation-duration:18s;animation-delay:-2s}
+    .l2{left:26%;animation-duration:24s;animation-delay:-11s;font-size:18px}
+    .l3{left:66%;animation-duration:21s;animation-delay:-6s;font-size:20px}
+    .l4{left:88%;animation-duration:25s;animation-delay:-16s}
+    @keyframes fall {
+      0%{transform:translate3d(0,-12vh,0) rotate(0);opacity:0}
+      10%{opacity:.65}
+      100%{transform:translate3d(6vw,120vh,0) rotate(320deg);opacity:0}
+    }
+
+    .cat-easter {
+      position:fixed; z-index:2; right:7vw; bottom:17.5vh;
+      width:36px; height:34px; opacity:.38; pointer-events:none;
+      filter:drop-shadow(0 3px 5px rgba(0,0,0,.12));
+    }
+
+    .screen {
+      position:relative; z-index:5;
+      min-height:100svh; padding:22px 18px;
+      display:grid; place-items:center;
+    }
+    .panel {
+      width:min(92vw,430px);
+      border:1px solid rgba(255,255,255,.58);
+      background:linear-gradient(180deg,rgba(255,250,246,.84),rgba(255,247,241,.76));
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      box-shadow:var(--shadow);
+      border-radius:32px;
+      padding:28px 22px;
+      text-align:center;
+      transition:opacity .4s ease, transform .4s ease;
+    }
+    .hidden { display:none!important; }
+    .fade-in { animation:fade .55s ease both; }
+    @keyframes fade { from{opacity:0;transform:translateY(12px) scale(.985)} to{opacity:1;transform:none} }
+
+    .for-you {
+      margin:2px 0 8px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:34px; font-weight:500;
+    }
+    .hint { color:var(--muted); font-size:14px; margin-bottom:24px; }
+
+    .envelope-wrap { display:grid; place-items:center; margin:8px auto 26px; perspective:900px; }
+    .envelope {
+      position:relative; width:min(78vw,300px); aspect-ratio:1.48/1;
+      border:0; background:transparent; padding:0; cursor:pointer;
+      filter:drop-shadow(0 18px 24px rgba(104,60,50,.20));
+    }
+    .env-body {
+      position:absolute; inset:18% 0 0;
+      background:linear-gradient(145deg,#e8a98c,#d98a73);
+      border-radius:0 0 14px 14px;
+      overflow:hidden;
+    }
+    .env-body:before {
+      content:""; position:absolute; inset:0;
+      clip-path:polygon(0 0,50% 61%,100% 0,100% 100%,0 100%);
+      background:linear-gradient(150deg,#f0b99f,#cc7965);
+    }
+    .env-body:after {
+      content:""; position:absolute; inset:0;
+      clip-path:polygon(0 100%,50% 42%,100% 100%);
+      background:linear-gradient(180deg,#e49a80,#d2816e);
+    }
+    .flap {
+      position:absolute; left:0; right:0; top:18%; height:52%;
+      transform-origin:top center;
+      clip-path:polygon(0 0,100% 0,50% 100%);
+      background:linear-gradient(180deg,#f2bca5,#df947b);
+      z-index:4;
+      transition:transform .85s cubic-bezier(.4,0,.2,1);
+      backface-visibility:hidden;
+    }
+    .seal {
+      position:absolute; z-index:6; left:50%; top:52%;
+      transform:translate(-50%,-50%);
+      width:44px; height:44px; border-radius:50%;
+      background:#a95749; color:#fff6f2;
+      display:grid; place-items:center; font-size:21px;
+      box-shadow:0 7px 14px rgba(95,45,40,.22);
+      transition:opacity .3s ease;
+    }
+    .envelope.open .flap { transform:rotateX(-178deg); }
+    .envelope.open .seal { opacity:0; }
+
+    .letter {
+      position:absolute; z-index:3; left:7%; right:7%; top:24%; bottom:7%;
+      background:#fffaf6; border-radius:12px;
+      display:flex; align-items:center; justify-content:center;
+      transform:translateY(18%);
+      transition:transform .85s cubic-bezier(.4,0,.2,1);
+    }
+    .envelope.open .letter { transform:translateY(-23%); }
+    .letter span { color:#a95749; font-family:Georgia,serif; font-size:24px; }
+
+    .message-title {
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:28px; line-height:1.14; font-weight:500;
+      margin:2px auto 16px; max-width:330px;
+    }
+    .message-copy { font-size:17px; line-height:1.6; margin:0; color:#654a44; }
+    .paw { position:absolute; right:22px; bottom:22px; opacity:.34; transform:rotate(10deg); }
+
+    .primary, .secondary {
+      width:100%; min-height:58px; border-radius:19px; cursor:pointer;
+      border:0; font-weight:700; font-size:17px;
+      transition:transform .15s ease, opacity .15s ease;
+    }
+    .primary:active,.secondary:active{transform:scale(.98)}
+    .primary {
+      color:white; background:linear-gradient(135deg,var(--rose),var(--rose2));
+      box-shadow:0 13px 28px rgba(169,87,73,.28);
+    }
+    .secondary {
+      color:var(--ink); background:rgba(255,255,255,.55);
+      border:1px solid rgba(68,45,41,.15);
+    }
+    .open-invite { margin-top:24px; }
+
+    .date-pill {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 15px; border-radius:999px;
+      background:rgba(201,119,99,.12); color:#80584f;
+      font-size:13px; letter-spacing:.13em; font-weight:700;
+    }
+    h1 {
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(38px,10vw,57px); line-height:.98;
+      font-weight:500; letter-spacing:-1.5px;
+      margin:22px auto 12px;
+    }
+    h1 em { font-style:italic; color:var(--rose2); }
+    .place { color:var(--muted); font-size:17px; margin:14px 0 24px; }
+
+    .countdown {
+      margin:0 auto 24px; padding:13px 14px 12px;
+      border-radius:18px; background:rgba(255,255,255,.42);
+      border:1px solid rgba(75,45,40,.09);
+    }
+    .count-label { font-size:13px; color:var(--muted); margin-bottom:8px; }
+    .count-values { display:flex; justify-content:center; gap:8px; }
+    .count-box {
+      min-width:68px; padding:8px 7px; border-radius:14px;
+      background:rgba(255,248,244,.78);
+    }
+    .num { display:block; font-family:Georgia,serif; font-size:24px; line-height:1; }
+    .unit { display:block; margin-top:5px; font-size:10px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); }
+
+    .buttons { display:grid; grid-template-columns:1.15fr .85fr; gap:10px; }
+    .status { min-height:18px; margin-top:13px; font-size:12px; color:var(--muted); }
+    .spinner {
+      display:inline-block; width:17px; height:17px; border-radius:50%;
+      border:2px solid rgba(255,255,255,.45); border-top-color:white;
+      vertical-align:-3px; animation:spin .8s linear infinite;
+    }
+    @keyframes spin {to{transform:rotate(360deg)}}
+
+    .after-yes {
+      position:relative; overflow:hidden; padding-top:12px; padding-bottom:12px;
+    }
+    .after-title {
+      font-family:Georgia,serif; font-size:36px; line-height:1.08;
+      font-weight:500; margin:16px 0 14px;
+    }
+    .after-sub { color:var(--muted); font-size:17px; line-height:1.5; }
+    .glow {
+      position:absolute; width:190px; height:190px; border-radius:50%;
+      background:radial-gradient(circle,rgba(255,206,147,.42),transparent 70%);
+      filter:blur(4px); pointer-events:none;
+    }
+    .g1{left:-90px;top:-70px} .g2{right:-100px;bottom:-90px}
+    .heart-float {
+      position:absolute; bottom:-20px; font-size:18px; opacity:0;
+      animation:floatHeart 5.5s linear infinite; pointer-events:none;
+    }
+    .h1{left:18%} .h2{left:50%;animation-delay:-2s} .h3{left:77%;animation-delay:-4s}
+    @keyframes floatHeart {
+      0%{transform:translateY(0) scale(.8);opacity:0}
+      18%{opacity:.48}
+      100%{transform:translateY(-270px) scale(1.1);opacity:0}
+    }
+
+    @media (max-width:370px) {
+      .panel{padding:24px 17px;border-radius:27px}
+      .buttons{grid-template-columns:1fr}
+      .count-box{min-width:60px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="bokeh"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span><span class="b5"></span><span class="b6"></span></div>
+    <div class="skyline">
+      <svg viewBox="0 0 1200 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#77524d"/>
+            <stop offset="1" stop-color="#493536"/>
+          </linearGradient>
+          <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5d4645" stop-opacity=".18"/>
+            <stop offset="1" stop-color="#3d3031" stop-opacity=".58"/>
+          </linearGradient>
+        </defs>
+
+        <path fill="url(#city)" d="
+          M0 250 L40 250 L40 228 L68 228 L68 212 L92 212 L92 238
+          L130 238 L130 218 L160 218 L160 201 L185 201 L185 236
+          L228 236 L228 214 L255 214 L255 193 L278 193 L278 237
+          L316 237 L316 209 L340 209 L340 184 L367 184 L367 236
+          L412 236 L412 215 L436 215 L436 195 L458 195 L458 236
+          L500 236 L500 198 L523 198 L523 228
+
+          L546 228 L546 158 L555 158 L555 128 L563 128 L563 89
+          L569 89 L569 62 L575 62 L575 89 L581 89 L581 128
+          L589 128 L589 158 L599 158 L599 228
+
+          L627 228 L627 207 L651 207 L651 187 L674 187 L674 231
+          L712 231 L712 202 L735 202 L735 177 L760 177 L760 229
+          L803 229 L803 209 L829 209 L829 188 L850 188 L850 228
+          L887 228 L887 200 L910 200 L910 161 L923 161 L923 122
+          L932 122 L932 74 L939 74 L939 122 L949 122 L949 161
+          L962 161 L962 230
+
+          L995 230 L995 205 L1020 205 L1020 183 L1045 183 L1045 230
+          L1080 230 L1080 211 L1110 211 L1110 191 L1140 191 L1140 229
+          L1170 229 L1170 205 L1200 205 L1200 420 L0 420 Z"/>
+
+        <path fill="#3f3031" opacity=".86" d="M0 300 C210 269 390 282 548 296 C706 310 831 298 952 280 C1063 264 1133 270 1200 288 L1200 322 C1105 303 1030 300 948 311 C814 329 704 334 546 320 C373 304 202 298 0 325 Z"/>
+        <path fill="url(#river)" d="M0 322 L1200 322 L1200 420 L0 420 Z"/>
+      </svg>
+    </div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="leaf l1">🍂</div><div class="leaf l2">🍁</div><div class="leaf l3">🍂</div><div class="leaf l4">🍁</div>
+
+  <svg class="cat-easter" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path fill="#2f2525" d="M21 26L14 8l17 10c6-3 12-3 18 0L66 8l-7 18c6 6 9 14 8 22-2 13-13 20-27 20S15 61 13 48c-1-8 2-16 8-22zm9 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm20 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM40 48l-4-3h8l-4 3z"/>
+  </svg>
+
+  <main class="screen">
+    <section class="panel fade-in" id="envelopeScreen">
+      <h2 class="for-you">Для тебя 💌</h2>
+      <div class="hint">Нажми, чтобы открыть</div>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" aria-label="Открыть конверт">
+          <div class="letter"><span>♡</span></div>
+          <div class="env-body"></div>
+          <div class="flap"></div>
+          <div class="seal">♡</div>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="letterScreen" style="position:relative">
+      <div class="message-title">У меня есть для тебя один маленький план на 03.10 🤍</div>
+      <p class="message-copy">Ты только приезжай.<br>Остальное я беру на себя.</p>
+      <button class="primary open-invite" id="openInvite">Открыть приглашение →</button>
+      <div class="paw">🐾</div>
+    </section>
+
+    <section class="panel hidden" id="inviteScreen">
+      <div class="date-pill">03.10.26</div>
+      <h1>Пойдёшь со мной<br><em>на свидание?</em></h1>
+      <div class="place">Место — сюрприз ✨</div>
+
+      <div class="countdown" id="countdownBox">
+        <div class="count-label" id="countLabel">До твоего приезда 🤍</div>
+        <div class="count-values" id="countValues">
+          <div class="count-box"><span class="num" id="days">—</span><span class="unit">дней</span></div>
+          <div class="count-box"><span class="num" id="hours">—</span><span class="unit">часов</span></div>
+          <div class="count-box"><span class="num" id="mins">—</span><span class="unit">минут</span></div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="primary" id="yesBtn">Да 💛</button>
+        <button class="secondary" id="noBtn">Нет</button>
+      </div>
+      <div class="status" id="status"></div>
+    </section>
+
+    <section class="panel hidden" id="yesScreen">
+      <div class="after-yes">
+        <div class="glow g1"></div><div class="glow g2"></div>
+        <div class="heart-float h1">♡</div><div class="heart-float h2">♡</div><div class="heart-float h3">♡</div>
+        <div class="after-title">Тогда всё решено ❤️</div>
+        <div class="after-sub">03.10 нас ждёт кое-что особенное ✨</div>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="noScreen">
+      <div class="after-title" style="font-size:30px">Хорошо 🤍</div>
+      <div class="after-sub">Спасибо, что ответила.</div>
+    </section>
+  </main>
+
+  <script>
+    const SUPABASE_URL = "https://c--8146b114-a53c-4f0a-a30b-002a39f8c99a-prod.lovable.cloud";
+    const SUPABASE_KEY = "sb_publishable_JBwc0SFE2vOY2LbZjTGkYg_MsoPq6n-";
+    const STORAGE_KEY = "date-invitation-answer-03102026";
+    const SESSION_KEY = "date-invitation-session-03102026";
+
+    const envelopeScreen = document.getElementById("envelopeScreen");
+    const letterScreen = document.getElementById("letterScreen");
+    const inviteScreen = document.getElementById("inviteScreen");
+    const yesScreen = document.getElementById("yesScreen");
+    const noScreen = document.getElementById("noScreen");
+    const envelope = document.getElementById("envelope");
+    const openInvite = document.getElementById("openInvite");
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const statusEl = document.getElementById("status");
+
+    function show(screen) {
+      [envelopeScreen, letterScreen, inviteScreen, yesScreen, noScreen].forEach(x => x.classList.add("hidden"));
+      screen.classList.remove("hidden");
+      screen.classList.remove("fade-in");
+      requestAnimationFrame(() => screen.classList.add("fade-in"));
+    }
+
+    envelope.addEventListener("click", () => {
+      if (envelope.classList.contains("open")) return;
+      envelope.classList.add("open");
+      setTimeout(() => show(letterScreen), 1050);
+    });
+
+    openInvite.addEventListener("click", () => show(inviteScreen));
+
+    function sessionId() {
+      let id = localStorage.getItem(SESSION_KEY);
+      if (!id) {
+        id = crypto.randomUUID ? crypto.randomUUID() : (Date.now().toString(36) + Math.random().toString(36).slice(2));
+        localStorage.setItem(SESSION_KEY, id);
+      }
+      return id;
+    }
+
+    async function submitAnswer(answer) {
+      if (localStorage.getItem(STORAGE_KEY)) return;
+      const btn = answer === "yes" ? yesBtn : noBtn;
+      yesBtn.disabled = true; noBtn.disabled = true;
+      const original = btn.innerHTML;
+      btn.innerHTML = '<span class="spinner"></span>';
+      statusEl.textContent = "Отправляю…";
+
+      try {
+        const r = await fetch(SUPABASE_URL + "/rest/v1/date_invitation_responses", {
+          method: "POST",
+          headers: {
+            "apikey": SUPABASE_KEY,
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify({ answer, session_id: sessionId() })
+        });
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        localStorage.setItem(STORAGE_KEY, answer);
+        statusEl.textContent = "";
+        show(answer === "yes" ? yesScreen : noScreen);
+      } catch (e) {
+        statusEl.textContent = "Не получилось отправить. Проверь интернет и попробуй ещё раз.";
+        yesBtn.disabled = false; noBtn.disabled = false;
+        btn.innerHTML = original;
+      }
+    }
+
+    yesBtn.addEventListener("click", () => submitAnswer("yes"));
+    noBtn.addEventListener("click", () => submitAnswer("no"));
+
+    const existing = localStorage.getItem(STORAGE_KEY);
+    if (existing === "yes") show(yesScreen);
+    else if (existing === "no") show(noScreen);
+
+    // 03.10.2026 07:00 Warsaw = 05:00 UTC (CEST, UTC+2)
+    const arrival = new Date("2026-10-03T05:00:00Z").getTime();
+    const dEl = document.getElementById("days");
+    const hEl = document.getElementById("hours");
+    const mEl = document.getElementById("mins");
+    const countLabel = document.getElementById("countLabel");
+    const countValues = document.getElementById("countValues");
+
+    function tick() {
+      const diff = arrival - Date.now();
+      if (diff <= 0) {
+        countLabel.textContent = "Сегодня тот самый день ✨";
+        countValues.style.display = "none";
+        return;
+      }
+      const totalMin = Math.floor(diff / 60000);
+      const days = Math.floor(totalMin / (60*24));
+      const hours = Math.floor((totalMin % (60*24)) / 60);
+      const mins = totalMin % 60;
+      dEl.textContent = days;
+      hEl.textContent = String(hours).padStart(2,"0");
+      mEl.textContent = String(mins).padStart(2,"0");
+    }
+    tick();
+    setInterval(tick, 30000);
+  </script>
+</body>
+</html>
